@@ -11,6 +11,10 @@ import UIKit
 struct Constants {
     struct Font{
         static let small = CGFloat(10)
-        
+    }
+    
+    struct URL {
+        static let base = "http://seongho.pythonanywhere.com/api/"
+        static let blog = base + "blog/"
     }
 }

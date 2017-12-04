@@ -9,9 +9,13 @@
 import UIKit
 import Pageboy
 import Tabman
+import Alamofire
+import SwiftyJSON
 
 class HanaPagerViewController: TabmanViewController {
 
+    var postModel: PostModel?
+    
     let viewControllers = [ViewController(), ViewController(), ViewController(), ViewController()]
     
     override func viewDidLoad() {
@@ -19,11 +23,23 @@ class HanaPagerViewController: TabmanViewController {
         
         self.makeView()
         self.makeBarPager()
+        self.getPost()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getPost(){
+        Alamofire.request(Constants.URL.blog).responseJSON { (response) in
+            if let data = response.data {
+                let postModel = PostModel.init(data: data)
+                self.postModel = postModel
+                
+                
+            }
+        }
     }
     
     fileprivate func makeView(){
@@ -47,6 +63,8 @@ class HanaPagerViewController: TabmanViewController {
             appearance.indicator.color = UIColor.Custom.tint
             appearance.indicator.isProgressive = true
             appearance.text.font = UIFont(customFont: .TimesNewRoman, withCustomSize: .small)
+            appearance.layout.extendBackgroundEdgeInsets = true
+            appearance.layout.interItemSpacing = 0
         })
 
         self.bar.style = .buttonBar

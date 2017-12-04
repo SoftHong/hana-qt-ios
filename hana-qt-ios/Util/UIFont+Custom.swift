@@ -13,9 +13,9 @@ enum CustomFont: String {
 }
 
 enum CustomFontSize: Float{
-    case small = 10
-    case medium = 16
-    case large = 25.6
+    case small = 16
+    case medium = 19.2
+    case large = 30.72
 }
 
 extension UIFont {

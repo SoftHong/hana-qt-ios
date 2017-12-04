@@ -8,7 +8,8 @@ target 'hana-qt-ios' do
   # Pods for hana-qt-ios
   pod 'Alamofire', '~> 4.5'
   pod 'Tabman', '~> 1.0'
-  
+  pod 'SwiftyJSON'
+
   target 'hana-qt-iosTests' do
     inherit! :search_paths
     # Pods for testing
