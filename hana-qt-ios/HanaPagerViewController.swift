@@ -12,30 +12,44 @@ import Tabman
 
 class HanaPagerViewController: TabmanViewController {
 
-    let viewControllers = [ViewController(), ViewController()]
+    let viewControllers = [ViewController(), ViewController(), ViewController(), ViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.dataSource = self
         
-        // configure the bar
-        self.bar.items = [Item(title: "Page 1"),
-                          Item(title: "Page 2")]
-        
-        self.bar.appearance = TabmanBar.Appearance({ (appearance) in
-            
-            // customise appearance here
-            appearance.indicator.color = UIColor.red
-            appearance.indicator.isProgressive = true
-        })
-        
-        self.bar.style = .blockTabBar
+        self.makeView()
+        self.makeBarPager()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    fileprivate func makeView(){
+        
+        self.view.backgroundColor = UIColor.Custom.background
+    }
+    
+    fileprivate func makeBarPager(){
+        
+        self.dataSource = self
+        
+        // configure the bar
+        self.bar.items = [Item(title: "Lectio"),
+                          Item(title: "Meditatio"),
+                          Item(title: "Oratio"),
+                          Item(title: "Contemplatio")]
+        
+        self.bar.appearance = TabmanBar.Appearance({ (appearance) in
+            
+            // customise appearance here
+            appearance.indicator.color = UIColor.Custom.tint
+            appearance.indicator.isProgressive = true
+            appearance.text.font = UIFont(customFont: .TimesNewRoman, withCustomSize: .small)
+        })
+
+        self.bar.style = .buttonBar
     }
     
 

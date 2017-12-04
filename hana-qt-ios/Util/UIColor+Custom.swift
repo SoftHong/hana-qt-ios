@@ -10,8 +10,9 @@ import UIKit
 
 extension UIColor {
     struct Custom{
-        static let background = UIColor.init(red: 245.0/255.0, green: 246.0/255.0, blue: 250.0/255.0, alpha: 1.0)
-        static let tint = UIColor.init(red: 124.0/255.0, green: 146.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+        static let background = UIColor.init(rgb: 0xF3F2F2)
+        static let tint = UIColor.init(rgb: 0xE67B7A)
+        static let text = UIColor.init(rgb: 0x504E4E)
     }
     
     convenience init(red: Int, green: Int, blue: Int) {

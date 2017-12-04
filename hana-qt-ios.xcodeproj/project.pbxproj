@@ -19,6 +19,8 @@
 		C16D21201FD4D49400BBCC3B /* hana_qt_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D211F1FD4D49400BBCC3B /* hana_qt_iosUITests.swift */; };
 		C1929A541FD4F3B20075B36A /* HanaPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A531FD4F3B20075B36A /* HanaPagerViewController.swift */; };
 		C1929A571FD50E2E0075B36A /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */; };
+		C1929A591FD518FB0075B36A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A581FD518FB0075B36A /* UIFont+Custom.swift */; };
+		C1929A5B1FD5192B0075B36A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A5A1FD5192B0075B36A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		C16D21211FD4D49400BBCC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1929A531FD4F3B20075B36A /* HanaPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanaPagerViewController.swift; sourceTree = "<group>"; };
 		C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		C1929A581FD518FB0075B36A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		C1929A5A1FD5192B0075B36A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E0B6B854E87FCE929EE2BCE2 /* Pods-hana-qt-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hana-qt-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hana-qt-iosTests/Pods-hana-qt-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF18E5626EA73AD5831EB66E /* Pods-hana-qt-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hana-qt-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hana-qt-ios/Pods-hana-qt-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +178,9 @@
 		C1929A551FD50E180075B36A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				C1929A5A1FD5192B0075B36A /* Constants.swift */,
 				C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */,
+				C1929A581FD518FB0075B36A /* UIFont+Custom.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -463,7 +469,9 @@
 				C16D21021FD4D49400BBCC3B /* ViewController.swift in Sources */,
 				C1929A541FD4F3B20075B36A /* HanaPagerViewController.swift in Sources */,
 				C1929A571FD50E2E0075B36A /* UIColor+Custom.swift in Sources */,
+				C1929A591FD518FB0075B36A /* UIFont+Custom.swift in Sources */,
 				C16D21001FD4D49400BBCC3B /* AppDelegate.swift in Sources */,
+				C1929A5B1FD5192B0075B36A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
