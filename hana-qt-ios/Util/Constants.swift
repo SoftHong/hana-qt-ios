@@ -10,11 +10,18 @@ import UIKit
 
 struct Constants {
     struct Font{
-        static let small = CGFloat(10)
+        struct LineSpacing{
+            static let small = CGFloat(6.25)
+            static let medium = CGFloat(10)
+        }
     }
     
     struct URL {
         static let base = "http://seongho.pythonanywhere.com/api/"
         static let blog = base + "blog/"
+    }
+    
+    struct Margin {
+        static let base = CGFloat(16)
     }
 }

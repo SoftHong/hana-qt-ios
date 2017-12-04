@@ -9,6 +9,8 @@
 import SwiftyJSON
 
 class PostModel {
+    
+    var publishedDate: Date?
     var title: String?
     var lectio: String?
     var meditatio: String?
@@ -16,11 +18,17 @@ class PostModel {
     var contemplatio: String?
     
     init(data:Data) {
-        let json = JSON(data: data)
+        let json = JSON(data: data)[0]
+        self.title = "\(json["title"])"
         self.lectio = "\(json["lectio"])"
         self.meditatio = "\(json["meditatio"])"
         self.oratio = "\(json["oratio"])"
         self.contemplatio = "\(json["contemplatio"])"
+        
+        let dateFormatter = ISO8601DateFormatter()
+        if let date = dateFormatter.date(from: "\(json["published_date"])"){
+            self.publishedDate = date
+        }
     }
     
 //    func parse(data:Data){

@@ -9,13 +9,14 @@
 import UIKit
 
 enum CustomFont: String {
+    case NanumMyeongjo = "NanumMyeongjo"
     case TimesNewRoman = "Times New Roman"
 }
 
 enum CustomFontSize: Float{
-    case small = 16
-    case medium = 19.2
-    case large = 30.72
+    case small = 10
+    case medium = 16
+    case large = 25.6
 }
 
 extension UIFont {

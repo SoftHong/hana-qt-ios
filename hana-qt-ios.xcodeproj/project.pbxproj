@@ -10,6 +10,7 @@
 		76C42B53BC43B17612525D3E /* Pods_hana_qt_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617CC7FA4BD0CFC316D04CAF /* Pods_hana_qt_ios.framework */; };
 		7B5F634C7EC2FA4C00C1A577 /* Pods_hana_qt_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A084244F483CCFE674CF42F2 /* Pods_hana_qt_iosTests.framework */; };
 		B84D5302B57BA8C1C28812C8 /* Pods_hana_qt_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4194C53AC57B1E74160740A7 /* Pods_hana_qt_iosUITests.framework */; };
+		C125CE2D1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C125CE2C1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift */; };
 		C16D21001FD4D49400BBCC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D20FF1FD4D49400BBCC3B /* AppDelegate.swift */; };
 		C16D21021FD4D49400BBCC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D21011FD4D49400BBCC3B /* ViewController.swift */; };
 		C16D21051FD4D49400BBCC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16D21031FD4D49400BBCC3B /* Main.storyboard */; };
@@ -17,11 +18,17 @@
 		C16D210A1FD4D49400BBCC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16D21081FD4D49400BBCC3B /* LaunchScreen.storyboard */; };
 		C16D21151FD4D49400BBCC3B /* hana_qt_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D21141FD4D49400BBCC3B /* hana_qt_iosTests.swift */; };
 		C16D21201FD4D49400BBCC3B /* hana_qt_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16D211F1FD4D49400BBCC3B /* hana_qt_iosUITests.swift */; };
-		C1929A541FD4F3B20075B36A /* HanaPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A531FD4F3B20075B36A /* HanaPagerViewController.swift */; };
+		C1929A541FD4F3B20075B36A /* ParentPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A531FD4F3B20075B36A /* ParentPagerViewController.swift */; };
 		C1929A571FD50E2E0075B36A /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */; };
 		C1929A591FD518FB0075B36A /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A581FD518FB0075B36A /* UIFont+Custom.swift */; };
 		C1929A5B1FD5192B0075B36A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A5A1FD5192B0075B36A /* Constants.swift */; };
 		C1929A5D1FD522550075B36A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A5C1FD522550075B36A /* PostModel.swift */; };
+		C1929A5F1FD52B130075B36A /* LectioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A5E1FD52B130075B36A /* LectioViewController.swift */; };
+		C1929A611FD55E870075B36A /* MeditatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A601FD55E870075B36A /* MeditatioViewController.swift */; };
+		C1929A631FD560B00075B36A /* OratioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A621FD560B00075B36A /* OratioViewController.swift */; };
+		C1929A651FD560BF0075B36A /* ContemplatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A641FD560BF0075B36A /* ContemplatioViewController.swift */; };
+		C1929A671FD560DA0075B36A /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1929A661FD560DA0075B36A /* BasePageViewController.swift */; };
+		C1929A6A1FD5A28D0075B36A /* NanumMyeongjo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1929A691FD5A2880075B36A /* NanumMyeongjo.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,7 @@
 		4D204377DA027DE8D369B1C4 /* Pods-hana-qt-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hana-qt-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hana-qt-iosUITests/Pods-hana-qt-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		617CC7FA4BD0CFC316D04CAF /* Pods_hana_qt_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hana_qt_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084244F483CCFE674CF42F2 /* Pods_hana_qt_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hana_qt_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C125CE2C1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMuttableAttributedString+Custom.swift"; sourceTree = "<group>"; };
 		C16D20FC1FD4D49400BBCC3B /* hana-qt-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hana-qt-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16D20FF1FD4D49400BBCC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16D21011FD4D49400BBCC3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,11 +70,17 @@
 		C16D211B1FD4D49400BBCC3B /* hana-qt-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hana-qt-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16D211F1FD4D49400BBCC3B /* hana_qt_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hana_qt_iosUITests.swift; sourceTree = "<group>"; };
 		C16D21211FD4D49400BBCC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1929A531FD4F3B20075B36A /* HanaPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanaPagerViewController.swift; sourceTree = "<group>"; };
+		C1929A531FD4F3B20075B36A /* ParentPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPagerViewController.swift; sourceTree = "<group>"; };
 		C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		C1929A581FD518FB0075B36A /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		C1929A5A1FD5192B0075B36A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C1929A5C1FD522550075B36A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		C1929A5E1FD52B130075B36A /* LectioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectioViewController.swift; sourceTree = "<group>"; };
+		C1929A601FD55E870075B36A /* MeditatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditatioViewController.swift; sourceTree = "<group>"; };
+		C1929A621FD560B00075B36A /* OratioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OratioViewController.swift; sourceTree = "<group>"; };
+		C1929A641FD560BF0075B36A /* ContemplatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemplatioViewController.swift; sourceTree = "<group>"; };
+		C1929A661FD560DA0075B36A /* BasePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
+		C1929A691FD5A2880075B36A /* NanumMyeongjo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.ttf; sourceTree = "<group>"; };
 		E0B6B854E87FCE929EE2BCE2 /* Pods-hana-qt-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hana-qt-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hana-qt-iosTests/Pods-hana-qt-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF18E5626EA73AD5831EB66E /* Pods-hana-qt-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hana-qt-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hana-qt-ios/Pods-hana-qt-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,15 +161,21 @@
 		C16D20FE1FD4D49400BBCC3B /* hana-qt-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C1929A681FD5A2790075B36A /* Font */,
 				C1929A551FD50E180075B36A /* Util */,
 				C16D20FF1FD4D49400BBCC3B /* AppDelegate.swift */,
 				C16D21011FD4D49400BBCC3B /* ViewController.swift */,
 				C1929A5C1FD522550075B36A /* PostModel.swift */,
-				C1929A531FD4F3B20075B36A /* HanaPagerViewController.swift */,
 				C16D21031FD4D49400BBCC3B /* Main.storyboard */,
 				C16D21061FD4D49400BBCC3B /* Assets.xcassets */,
 				C16D21081FD4D49400BBCC3B /* LaunchScreen.storyboard */,
 				C16D210B1FD4D49400BBCC3B /* Info.plist */,
+				C1929A531FD4F3B20075B36A /* ParentPagerViewController.swift */,
+				C1929A661FD560DA0075B36A /* BasePageViewController.swift */,
+				C1929A5E1FD52B130075B36A /* LectioViewController.swift */,
+				C1929A601FD55E870075B36A /* MeditatioViewController.swift */,
+				C1929A621FD560B00075B36A /* OratioViewController.swift */,
+				C1929A641FD560BF0075B36A /* ContemplatioViewController.swift */,
 			);
 			path = "hana-qt-ios";
 			sourceTree = "<group>";
@@ -184,8 +204,17 @@
 				C1929A5A1FD5192B0075B36A /* Constants.swift */,
 				C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */,
 				C1929A581FD518FB0075B36A /* UIFont+Custom.swift */,
+				C125CE2C1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		C1929A681FD5A2790075B36A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C1929A691FD5A2880075B36A /* NanumMyeongjo.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1929A6A1FD5A28D0075B36A /* NanumMyeongjo.ttf in Resources */,
 				C16D210A1FD4D49400BBCC3B /* LaunchScreen.storyboard in Resources */,
 				C16D21071FD4D49400BBCC3B /* Assets.xcassets in Resources */,
 				C16D21051FD4D49400BBCC3B /* Main.storyboard in Resources */,
@@ -469,13 +499,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1929A631FD560B00075B36A /* OratioViewController.swift in Sources */,
+				C1929A651FD560BF0075B36A /* ContemplatioViewController.swift in Sources */,
+				C1929A671FD560DA0075B36A /* BasePageViewController.swift in Sources */,
 				C16D21021FD4D49400BBCC3B /* ViewController.swift in Sources */,
-				C1929A541FD4F3B20075B36A /* HanaPagerViewController.swift in Sources */,
+				C1929A541FD4F3B20075B36A /* ParentPagerViewController.swift in Sources */,
 				C1929A571FD50E2E0075B36A /* UIColor+Custom.swift in Sources */,
 				C1929A5D1FD522550075B36A /* PostModel.swift in Sources */,
+				C1929A5F1FD52B130075B36A /* LectioViewController.swift in Sources */,
 				C1929A591FD518FB0075B36A /* UIFont+Custom.swift in Sources */,
 				C16D21001FD4D49400BBCC3B /* AppDelegate.swift in Sources */,
 				C1929A5B1FD5192B0075B36A /* Constants.swift in Sources */,
+				C1929A611FD55E870075B36A /* MeditatioViewController.swift in Sources */,
+				C125CE2D1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

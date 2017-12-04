@@ -12,14 +12,24 @@ import Tabman
 import Alamofire
 import SwiftyJSON
 
-class HanaPagerViewController: TabmanViewController {
+class ParentPagerViewController: TabmanViewController {
 
-    var postModel: PostModel?
-    
-    let viewControllers = [ViewController(), ViewController(), ViewController(), ViewController()]
+    var viewControllers: [BasePageViewController]?
+
+    var postModel: PostModel?{
+        didSet{
+            self.updateUI()
+            self.updateChildVC()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.viewControllers = [LectioViewController(),
+                                MeditatioViewController(),
+                                OratioViewController(),
+                                ContemplatioViewController()]
         
         self.makeView()
         self.makeBarPager()
@@ -36,8 +46,23 @@ class HanaPagerViewController: TabmanViewController {
             if let data = response.data {
                 let postModel = PostModel.init(data: data)
                 self.postModel = postModel
-                
-                
+            }
+        }
+    }
+    
+    func updateUI(){
+        
+        if let postModel = self.postModel,
+            let title = postModel.title{
+            
+            self.navigationItem.title = title
+        }
+    }
+    
+    func updateChildVC(){
+        if let pageVCs = self.viewControllers{
+            for pageVC in pageVCs{
+                pageVC.postModel = postModel
             }
         }
     }
@@ -62,9 +87,10 @@ class HanaPagerViewController: TabmanViewController {
             // customise appearance here
             appearance.indicator.color = UIColor.Custom.tint
             appearance.indicator.isProgressive = true
-            appearance.text.font = UIFont(customFont: .TimesNewRoman, withCustomSize: .small)
+            appearance.text.font = UIFont(customFont: .TimesNewRoman, withCustomSize: .medium)
             appearance.layout.extendBackgroundEdgeInsets = true
             appearance.layout.interItemSpacing = 0
+            appearance.layout.edgeInset = 0
         })
 
         self.bar.style = .buttonBar
@@ -83,15 +109,25 @@ class HanaPagerViewController: TabmanViewController {
 
 }
 
-extension HanaPagerViewController: PageboyViewControllerDataSource{
+extension ParentPagerViewController: PageboyViewControllerDataSource{
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return viewControllers.count
+        
+        if let viewControllers = self.viewControllers{
+            return viewControllers.count
+        }else{
+            return 0
+        }
     }
     
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return viewControllers[index]
+        
+        if let viewControllers = self.viewControllers{
+            return viewControllers[index]
+        }else{
+            return nil
+        }
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
