@@ -92,6 +92,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Pageboy/Pageboy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftRichString/SwiftRichString.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Tabman/Tabman.framework"
 fi
@@ -99,6 +100,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Pageboy/Pageboy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftRichString/SwiftRichString.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Tabman/Tabman.framework"
 fi

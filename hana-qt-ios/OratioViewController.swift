@@ -51,7 +51,8 @@ class OratioViewController: BasePageViewController {
 
         if let bodyLabel = self.bodyLabel,
             let postModel = self.postModel,
-            let oratio = postModel.oratio
+            let oratio = postModel.oratio,
+            bodyLabel.text != oratio
         {
             print(oratio)
             let attributedString = NSMutableAttributedString.init(string: oratio)

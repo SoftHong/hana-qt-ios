@@ -52,11 +52,11 @@ class ParentPagerViewController: TabmanViewController {
     
     func updateUI(){
         
-        if let postModel = self.postModel,
-            let title = postModel.title{
-            
-            self.navigationItem.title = title
-        }
+//        if let postModel = self.postModel,
+//            let title = postModel.title{
+//
+//            self.navigationItem.title = title
+//        }
     }
     
     func updateChildVC(){

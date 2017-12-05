@@ -9,6 +9,7 @@ target 'hana-qt-ios' do
   pod 'Alamofire', '~> 4.5'
   pod 'Tabman', '~> 1.0'
   pod 'SwiftyJSON'
+  pod 'SwiftRichString'
 
   target 'hana-qt-iosTests' do
     inherit! :search_paths

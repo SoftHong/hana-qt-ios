@@ -10,6 +10,9 @@ import UIKit
 
 enum CustomFont: String {
     case NanumMyeongjo = "NanumMyeongjo"
+    case MyeongjoBold = "NanumMyeongjoBold"
+    case MyeongjoExtraBold = "NanumMyeongjoExtraBold"
+    case SDMiSaeng = "SDMiSaeng"
     case TimesNewRoman = "Times New Roman"
 }
 

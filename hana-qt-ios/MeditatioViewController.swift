@@ -57,7 +57,8 @@ class MeditatioViewController: BasePageViewController {
 
         if let bodyLabel = self.bodyLabel,
             let postModel = self.postModel,
-            let meditatio = postModel.meditatio
+            let meditatio = postModel.meditatio,
+            bodyLabel.text != meditatio
         {
             print(meditatio)
             let attributedString = NSMutableAttributedString.init(string: meditatio)

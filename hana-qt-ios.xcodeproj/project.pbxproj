@@ -57,6 +57,9 @@
 		617CC7FA4BD0CFC316D04CAF /* Pods_hana_qt_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hana_qt_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084244F483CCFE674CF42F2 /* Pods_hana_qt_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hana_qt_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C125CE2C1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMuttableAttributedString+Custom.swift"; sourceTree = "<group>"; };
+		C13650711FD63C75007D7D4D /* SDMiSaeng.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDMiSaeng.ttf; sourceTree = "<group>"; };
+		C13650721FD63C75007D7D4D /* NanumMyeongjoExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoExtraBold.ttf; sourceTree = "<group>"; };
+		C13650731FD63C75007D7D4D /* NanumMyeongjoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoBold.ttf; sourceTree = "<group>"; };
 		C16D20FC1FD4D49400BBCC3B /* hana-qt-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hana-qt-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16D20FF1FD4D49400BBCC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C16D21011FD4D49400BBCC3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,10 +204,10 @@
 		C1929A551FD50E180075B36A /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				C1929A5A1FD5192B0075B36A /* Constants.swift */,
 				C1929A561FD50E2E0075B36A /* UIColor+Custom.swift */,
 				C1929A581FD518FB0075B36A /* UIFont+Custom.swift */,
 				C125CE2C1FD5AA2600AD61B7 /* NSMuttableAttributedString+Custom.swift */,
+				C1929A5A1FD5192B0075B36A /* Constants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -212,6 +215,9 @@
 		C1929A681FD5A2790075B36A /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				C13650731FD63C75007D7D4D /* NanumMyeongjoBold.ttf */,
+				C13650721FD63C75007D7D4D /* NanumMyeongjoExtraBold.ttf */,
+				C13650711FD63C75007D7D4D /* SDMiSaeng.ttf */,
 				C1929A691FD5A2880075B36A /* NanumMyeongjo.ttf */,
 			);
 			path = Font;
